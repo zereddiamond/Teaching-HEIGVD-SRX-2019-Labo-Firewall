@@ -224,8 +224,11 @@ Vous pouvez commencer par vérifier que le ping n'est pas possible actuellement 
 ```bash
 ping 192.168.200.3
 ```
+---
 
 **LIVRABLE : capture d'écran de votre tentative de ping.**  
+
+---
 
 En effet, la communication entre les clients dans le LAN et les serveurs dans la DMZ doit passer à travers le Firewall. Il faut donc définir le Firewall comme passerelle par défaut pour le client dans le LAN et le serveur dans la DMZ.
 
@@ -253,7 +256,11 @@ La communication devrait maintenant être possible entre les deux machines. Fait
 ping 192.168.100.3
 ```
 
+---
+
 **LIVRABLE : capture d'écran de votre nouvelle tentative de ping.**
+
+---
 
 La communication est maintenant possible entre les deux machines. Pourtant, si vous essayez de communiquer depuis le client ou le serveur vers l'Internet, ça ne devrait pas encore fonctionner sans une manipulation supplémentaire au niveau du firewall. Vous pouvez le vérifier avec un ping depuis le client ou le serveur vers une adresse Internet. 
 
@@ -263,8 +270,11 @@ Par exemple :
 ping 8.8.8.8
 ```
 
+---
+
 **LIVRABLE : capture d'écran de votre ping vers l'Internet.**
 
+---
 
 ### Configuration réseau du firewall
 
@@ -339,9 +349,12 @@ Ceci correspond a la **condition 2** du cahier des charges.
 
 Commandes iptables :
 
+---
+
 ```bash
 LIVRABLE : Commandes iptables
 ```
+---
 
 ### Questions
 
