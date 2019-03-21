@@ -2,7 +2,7 @@
 
 **ATTENTION : Commencez par créer un Fork de ce repo et travaillez sur votre fork.**
 
-Clonez le repo sur votre machine. Vous retrouverez notamment le ficher `Dockerfile` indispensable pour la partie [Installation de l’environnement virtualisé](https://github.com/arubinst/Teaching-HEIGVD-SRX-2019-Labo-Firewall#installation-de-lenvironnement-virtualisé).
+Clonez le repo sur votre machine. Vous retrouverez notamment dans ce repo le ficher `Dockerfile` indispensable pour [l'ajout des conteneurs et configuration du réseau](https://github.com/arubinst/Teaching-HEIGVD-SRX-2019-Labo-Firewall#ajout-des-conteneurs-et-configuration-du-réseau).
 
 Vous pouvez répondre aux questions en modifiant directement votre clone du README.md ou avec un fichier pdf que vous pourrez uploader sur votre fork.
 
