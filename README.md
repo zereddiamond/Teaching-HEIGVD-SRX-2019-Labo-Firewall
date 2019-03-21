@@ -278,7 +278,23 @@ ping 8.8.8.8
 
 ### Configuration réseau du firewall
 
-Dans un terminal de votre firewall, taper les commandes suivantes :
+Dans un terminal de votre firewall, vous pouvez utiliser l'éditeur `nano` déjà installé pour éditer le fichier `/etc/ssh/sshd_config`.
+
+Il faudra changer la ligne :
+
+```
+#PermitRootLogin prohibit-password
+```
+
+à :
+
+```
+PermitRootLogin yes
+```
+
+et enregistrer et fermer le fichier en question.
+
+Ensuite, il faut taper les commandes suivantes :
 
 ```bash
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
