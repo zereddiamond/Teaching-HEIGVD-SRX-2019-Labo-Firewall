@@ -243,7 +243,25 @@ ip route add default via 192.168.100.2
 
 ### Configuration du serveur dans la DMZ
 
-Dans un terminal de votre serveur, taper les commandes suivantes :
+Dans un terminal de votre serveur dans DMZ, vous pouvez utiliser l'éditeur `nano` déjà installé pour éditer le fichier `/etc/ssh/sshd_config`.
+
+Il faudra changer la ligne :
+
+```
+#PermitRootLogin prohibit-password
+```
+
+à :
+
+```
+PermitRootLogin yes
+```
+
+et enregistrer et fermer le fichier en question.
+
+**ATTENTION :** Il faudra aussi définir un mot de passe pour pour les connexions ssh. Pour cela, utiliser la commande `passwd`.
+
+Toujours dans un terminal de votre serveur, taper les commandes suivantes :
 
 ```bash
 ip route del default 
@@ -252,6 +270,8 @@ ip route add default via 192.168.200.2
 service nginx start
 service ssh start
 ```
+
+Les deux dernières commandes démarrent les services Web et SSH du serveur.
 
 La communication devrait maintenant être possible entre les deux machines. Faites un nouveau test de ping, cette fois-ci depuis le serveur vers le client :
 
@@ -306,7 +326,7 @@ service ssh start
 
 La commande `iptables` définit une règle dans le tableau NAT qui permet la redirection de ports et donc, l'accès à l'Internet pour les deux autres machines.
 
-Les deux autres commandes démarrent les services Web et SSH du serveur.
+L'autre commande démarre le service SSH du serveur.
 
 **ATTENTION :** Il faudra aussi définir un mot de passe pour pour les connexions ssh. Pour cela, utiliser la commande `passwd`.
 
