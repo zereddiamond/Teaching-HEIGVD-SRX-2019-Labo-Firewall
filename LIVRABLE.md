@@ -147,6 +147,7 @@ _Lors de la définition d'une zone, spécifier l'adresse du sous-réseau IP avec
 |192.168.200.3/24   |  192.168.100.3/24   |  TCP    |     22     |        | ACCEPT       |
 |192.168.100.3/24   |  192.168.100.2/24   |  TCP    |          |   22      | ACCEPT       |
 |192.168.100.2/24   |  192.168.100.3/24   |  TCP    |       22   |        | ACCEPT       |
+|any                | any                 |  any    | any        | any    | DROP |
 
 ---
 
