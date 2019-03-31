@@ -527,6 +527,8 @@ iptables -A FORWARD -d 192.168.100.0/24 -i eth0 -p tcp --sport 53 -m conntrack -
 **LIVRABLE : Votre réponse ici...**
 Le premier ping est perdu en raison de la connexion entre le firewall et un DNS externe. Les pings suivants fonctionnement correctement.
 
+Dans notre cas, tous les pings ont fonctionné correctement.
+
 ---
 
 
