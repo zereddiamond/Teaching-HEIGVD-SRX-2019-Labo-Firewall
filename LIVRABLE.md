@@ -439,7 +439,7 @@ Faire une capture du ping.
 ---
 **LIVRABLE : capture d'écran de votre ping vers l'Internet.**
 
-![Tentative de ping vers le WAN](figures/ping_lan_wan_apres_application_regles)
+![Tentative de ping vers le WAN](figures/ping_lan_wan_apres_application_regles.png)
 
 ---
 
